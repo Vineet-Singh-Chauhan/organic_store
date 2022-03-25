@@ -1,8 +1,8 @@
-// function foo(){
-//     console.log("hello")
-// document.querySelector('#staticBackdrop');
-// }
-// console.log("hello")
+function foo(){
+    console.log("hello")
+document.querySelector('#staticBackdrop');
+}
+console.log("hello")
 
         document.addEventListener('DOMContentLoaded', function () {
             var splide = new Splide('.splide', {
