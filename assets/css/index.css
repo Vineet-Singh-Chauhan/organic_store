@@ -11,7 +11,7 @@
 body{
     background:url(../images/bg-one.jpg) !important;
     background-repeat: no-repeat !important;
-    background-size: cover !important;
+    background-size: 100% 100% !important;
     background-attachment: fixed !important;
     font-family: var(--nunito) !important;
 }
