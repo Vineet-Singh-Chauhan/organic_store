@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Organic's Store</title>
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cookie&family=Nunito:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css">
+
+</head>
+
+<body >
+    <!----------------------------Navbar------------------------------------->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-glass px-2 sticky-top">
+        <div class="container">
+            <a class="navbar-brand pe-3" href="#">Organic's</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu bg-glass-sec" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Store</a>
+                    </li>
+                </ul>
+                <!-- <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form> -->
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"><i class="bi bi-person-circle"></i> <span class="welcome-txt">hello</span></a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link disabled nav-right-grp" href="#" tabindex="-1" aria-disabled="true"><i class="bi bi-brightness-high-fill"></i>
+                            <i class="bi bi-moon-fill"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!----------------------------Hero Section------------------------------------->
+    <section class="hero-section  container p-5">
+        <div class="row">
+        <div class="  px-5 hero-div d-flex  flex-column  justify-content-center align-items-center ">
+            <div class="overlay"></div>
+            <div><i class="fa-brands fa-envira display-5 mt-5"></i></div>
+            <h1 class="mb-3 display-1 text-center">
+                Welcome to Organic's 
+            </h1>
+            <h4>Choose the healthier way of life </h4>
+            <!-- <h4>return to purity</h4> -->
+
+            <p class="mt-5 text-center w-75"><b><i>
+                Hi , user 
+            
+            <br>
+           Organic's has grown on the principles of health, ecology, and care. We believe in working with a large number of accredited farmers who do not use or promote the use of pesticides and genetically modified seeds to grow their produce. We aim to give our customers a healthy chemical-free meal for the perfect nutrition.
+            </i></b></p>
+            <div class="mb-3 py-3 d-flex justify-content-center w-100">
+                <button type="button" class="btn btn-outline-light me-5 " >Our Journey</button>
+                <button type="button" class="btn btn-outline-light">Shop Now</button>
+                
+            </div>
+            <div class=" p-1 d-flex flex-column justify-content-center align-items-center scroll-down">
+                <div class="mb-1">Scroll to Explore</div>
+                <i class="bi bi-chevron-double-down"></i>
+            </div>
+        </div>
+    </div>
+    <!--------------------modal------------------>
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Understood</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!----------------------------range Section------------------------------------->
+    <section class="second-section  container-fluid my-5 p-5">
+        <div class="container">
+        <div class="d-flex  flex-column justify-content-center align-items-center my-5">
+        
+        <h1> Our Organic Range </h1>
+        <div><img src="assets/images/head-under.png"></div>
+    </div>
+    <div class=" row gap-2 m-2">
+        
+        <div class="col d-flex  flex-column justify-content-center align-items-center bg-glass p-5 position-relative">
+            <div class="overlay2"></div>
+            <h1><i class="fa-solid fa-bowl-rice"></i></h1>
+            <h1>Rice</h1>
+        </div>
+        <div class="col d-flex  flex-column justify-content-center align-items-center bg-glass  p-5 position-relative">
+            <div class="overlay2"></div>
+            <h1><i class="fa-solid fa-wheat-awn"></i></h1>
+            <h1>Cereals</h1>
+        </div>
+        <div class="col d-flex  flex-column justify-content-center align-items-center bg-glass p-5 position-relative">
+            <div class="overlay2"></div>
+            <h1><i class="fa-solid fa-egg"></i></h1>
+            <h1>Eggs</h1>
+        </div>
+        
+    </div>
+    <div class="row gap-2 m-2">
+        <div class="col d-flex  flex-column justify-content-center align-items-center bg-glass  p-5 position-relative">
+            <div class="overlay2"></div>
+            <h1><i class="fa-solid fa-cubes"></i></h1>
+            <h1>Sugars</h1>
+        </div>
+        <div class="col d-flex  flex-column justify-content-center align-items-center bg-glass p-5 position-relative">
+            <h1><i class="fa-solid fa-mug-hot "></i></h1>
+            <div class="overlay2"></div>
+            <h1>Tea</h1>
+        </div>
+        <div class="col d-flex  flex-column justify-content-center align-items-center bg-glass p-5 
+        position-relative">
+            <div class="overlay2"></div>
+            <h1><i class="fa-solid fa-mortar-pestle"></i></h1>
+            <h1>Spices</h1>
+        </div>
+    </div>
+       <div class="row gap-2 m-2">
+        <div class="col d-flex  flex-column justify-content-center align-items-center bg-glass  p-5 position-relative">
+            <div class="overlay2"></div>
+            <h1><i class="fa-solid fa-martini-glass-citrus"></i></h1>
+            <h1>Juices</h1>
+        </div>
+        <div class="col d-flex  flex-column justify-content-center align-items-center bg-glass p-5 position-relative">
+            <h1><i class="fa-solid fa-drumstick-bite"></i></h1>
+            <div class="overlay2"></div>
+            <h1>Drumsticks</h1>
+        </div>
+        <div class="col d-flex  flex-column justify-content-center align-items-center bg-glass p-5 position-relative">
+            <div class="overlay2"></div>
+            <h1><i class="fa-solid fa-bottle-water"></i></h1>
+            <h1>Oils</h1>
+        </div>
+    </div>
+</div>
+    </section>
+
+    <section class="why-section d-flex align-items-center flex-column">
+        <div class="d-flex  flex-column justify-content-center align-items-center my-5">
+        
+            <h1>Testimonials</h1>
+            <div>Why Choose Organic's</div>
+            <div><img src="assets/images/head-under.png"></div>
+        </div>
+    
+<div class="w-75 bg-glass pb-5">
+        <div class="splide my-2">
+            <div class="splide__track mx-5">
+                <ul class="splide__list ">
+
+                    <li class="splide__slide d-flex justify-content-center">
+                        <div class="group text-center ">
+                            <img src="assets/images/aps.png" alt="" class="grp-img ">
+                            <div class="blue-card text-start p-3 position-relative ">
+                                <div class="overlay3"></div>
+                                <div class="text-center">
+                                    <h4 class="mt-5 ">Jaymal  Sisodia</h4>
+                                    <i>Udaipur</i>
+                                </div>
+                                <p class="mt-5">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur,
+                                    hic ut asperiores minima beatae repellat cupiditate suscipit eveniet nemo officia."
+                                </p>
+                                
+
+                            </div>
+
+                        </div>
+                    </li>
+
+
+                    <li class="splide__slide d-flex justify-content-center">
+                        <div class="group text-center ">
+                            <img src="assets/images/aps.png" alt="" class="grp-img ">
+                            <div class="blue-card text-start p-3 position-relative ">
+                                <div class="overlay3"></div>
+                                <div class="text-center">
+                                    <h4 class="mt-5 ">Amar Singh Rathore</h4>
+                                    <i>Amer</i>
+                                </div>
+                                <p class="mt-5">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur,
+                                    hic ut asperiores minima beatae repellat cupiditate suscipit eveniet nemo officia."
+                                </p>
+                                
+
+                            </div>
+
+                        </div>
+                    </li>
+                   
+                </ul>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!----------------------Certificates----------------->
+    <section class="certificate-section d-flex align-items-center flex-column mt-5">
+        <div class="d-flex  flex-column justify-content-center align-items-center my-5">
+        
+            <h1>Our Certifications</h1>
+            <div>Hallmarks For Trust</div>
+            <div><img src="assets/images/head-under.png"></div>
+        </div>
+    
+<div class="container-fluid bg-glass position-relative py-5">
+        <div class="splide2 my-2 container">
+            <div class="splide__track ">
+                <ul class="splide__list ">
+
+                    <li class="splide__slide  ">
+                        <div class="certificate-div ">
+                            
+                            <img src="/assets/images/cert1.jpg"  >
+                            </div>
+                        
+                    </li>
+
+                    <li class="splide__slide ">
+                        <div class="certificate-div ">
+                            
+                            <img src="/assets/images/cert2.jpg" >
+                            </div>
+                        
+                    </li>
+
+                    <li class="splide__slide">
+                        <div class="certificate-div ">
+                            
+                            <img src="/assets/images/cert3.png" >
+                            </div>
+                        
+                    </li>
+                    <li class="splide__slide">
+                        <div class="certificate-div ">
+                            
+                            <img src="/assets/images/cert4.jpg" >
+                            </div>
+                        
+                    </li>
+
+                    
+                   
+                </ul>
+            </div>
+        </div>
+    </div>
+    </section>
+
+
+    <footer>
+<div class="container-fluid mt-5 bg-glass position-relative">
+    <div class="container pt-5">
+        <div class="overlay3"></div>
+        <div class="row gap-3">
+            <div class="col">
+                <h1 class="cursive">Organic's</h1>
+                <div class="ps-1 ">
+                <span class="mt">Follow Us</span>
+                <div><i class="bi bi-facebook me-2"></i> <i class="bi bi-twitter me-2"></i> <i class="bi bi-instagram"></i></div>
+                <p>Like & Share</p>
+            </div>
+            </div>
+
+            <div class="col">
+                <h3>Get In Touch</h3>
+                <p> ABC Consumer Products ,
+                    Greater Ratnagiri, India</p>
+                <div>customercare@organic.com</div>
+                <p>+91 1234567890</p>
+            </div>
+            <div class="col">
+                <h3>Quick Links</h3>
+                <a href="">Home</a><br>
+                <a href="">About Us</a><br>
+                <a href="">Products</a><br>
+                <a href="">Blog</a><br>
+                <a href="">Recipes</a><br>
+                <a href="">Contact</a><br>
+                <a href="">FAQs</a><br>
+                
+            </div>
+
+            <div class="col">
+                <h3>Useful Links</h3>
+                <a href="">Terms & Conditions</a><br>
+                <a href="">Privacy Policy</a><br>
+                <a href="">Sitemap</a><br>
+                <a href="">Buy Now</a><br>
+                
+                
+            </div>
+            <div class="col">
+                <h3>Subscribe our newsletter</h3>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email address :</label>
+                    <input class="form-control form-control-sm" type="text" placeholder="Email address" aria-label=".form-control-sm example">
+                    
+                  </div>
+                  <button type="button" class="btn btn-outline-light btn-sm">Subscribe</button>
+                
+                
+                
+            </div>
+
+        </div>
+        <div class=" row d-flex text-center position-relative">
+            
+            <p class="pt-5 ">&copy; Copyright 2022 - Organic's. All Rights Reserved.</p>
+        </div>
+
+    </div>
+</div>
+
+
+    </footer>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+        <script src="/assets/scripts/index.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"
+            integrity="sha256-b/fLMBwSqO9vy/phDPv6OufPpR+VfUL+OsTEkJMPg+Q=" crossorigin="anonymous"></script>
+</body>
+
+
+
+</html>
