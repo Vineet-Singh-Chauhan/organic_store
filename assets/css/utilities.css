@@ -1,0 +1,243 @@
+/*-----------------------------------------------------------------------*/
+/**===== wave1 =====*/
+#wave1 {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 50px;
+    width: 50px;
+    margin: -25px 0 0 -25px;
+    border-radius: 50%;
+  }
+  
+  #wave1:before, #wave1:after {
+    content: '';
+    border: 2px solid #008744;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 0px;
+  }
+  
+  #wave1:before {
+    -webkit-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+            transform: scale(1, 1);
+    opacity: 1;
+    -webkit-animation: spWaveBe 0.6s infinite linear;
+            animation: spWaveBe 0.6s infinite linear;
+  }
+  
+  #wave1:after {
+    -webkit-transform: scale(0, 0);
+        -ms-transform: scale(0, 0);
+            transform: scale(0, 0);
+    opacity: 0;
+    -webkit-animation: spWaveAf 0.6s infinite linear;
+            animation: spWaveAf 0.6s infinite linear;
+  }
+  
+  @-webkit-keyframes spWaveAf {
+    from {
+      -webkit-transform: scale(0.5, 0.5);
+              transform: scale(0.5, 0.5);
+      opacity: 0;
+    }
+    to {
+      -webkit-transform: scale(1, 1);
+              transform: scale(1, 1);
+      opacity: 1;
+    }
+  }
+  @keyframes spWaveAf {
+    from {
+      -webkit-transform: scale(0.5, 0.5);
+              transform: scale(0.5, 0.5);
+      -webkit-transform: scale(0.5, 0.5);
+              transform: scale(0.5, 0.5);
+      opacity: 0;
+    }
+    to {
+      -webkit-transform: scale(1, 1);
+              transform: scale(1, 1);
+      -webkit-transform: scale(1, 1);
+              transform: scale(1, 1);
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes spWaveBe {
+    from {
+      -webkit-transform: scale(1, 1);
+              transform: scale(1, 1);
+      opacity: 1;
+    }
+    to {
+      -webkit-transform: scale(1.5, 1.5);
+              transform: scale(1.5, 1.5);
+      opacity: 0;
+    }
+  }
+  @keyframes spWaveBe {
+    from {
+      -webkit-transform: scale(1, 1);
+              transform: scale(1, 1);
+      opacity: 1;
+    }
+    to {
+      -webkit-transform: scale(1.5, 1.5);
+              transform: scale(1.5, 1.5);
+      opacity: 0;
+    }
+  }
+  /** END of wave1 */
+  /*-----------------------------------------------------------------------*/
+
+
+  #preloader{
+      z-index: 99999999999999999999999;
+      position: absolute;
+      top:0;
+      left:0;
+      height: 100%;
+      width:100%;
+      background-color: rgba(255, 255, 255, 0.658);
+      backdrop-filter: blur(8px);
+      position: fixed;
+  }
+
+
+
+
+  /*----------------------------------back to top btn -----------------------*/
+  .back2top{
+      height: 50px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      border: solid var(--pri-color) 2px;
+      border-radius: 100px;
+      z-index: 300;
+      bottom:40px;
+      right:30px;
+      position: fixed;
+      transition: 0.5s;
+      /* display: none; */
+  }
+  .back2top:hover{
+      background: var(--pri-color);
+      cursor: pointer;
+      /* color:black !important; */
+  }
+  .back2top:hover i{
+      color:rgb(0, 0, 0) !important;
+      
+  }
+
+
+  /*----------------------------------Theme-Customizer-----------------------*/
+  .theme-customizer{
+      position: fixed;
+      z-index: 70;
+      top:0;
+      right:0;
+      bottom: 0;
+      height: 100%;
+      width:300px;
+      overflow-y: scroll;
+      background-color: var(--sec-color) !important;
+      backdrop-filter: blur(80px) !important;
+      transform: translateX(300px);
+      transition: 0.7s;
+
+  }
+  .theme-div{
+      padding-top:80px;
+
+  }
+  .theme-div div:hover{
+      cursor:pointer;
+      background-color: rgba(177, 177, 177, 0.349);
+  }
+  .border-top-bottom{
+      border-top:white 0.5px solid;
+      border-bottom:white 0.5px solid;
+  }
+  .theme-customizer::-webkit-scrollbar {
+    width: 3px;
+  }
+.theme-customizer::-webkit-scrollbar-thumb {
+    background: var(--pri-color);
+    border-radius: 20px;
+  }
+.theme-customizer::-webkit-scrollbar-thumb:hover {
+    background: rgb(173, 173, 173);
+  }
+
+.color-palette i{
+    display: none;
+}
+/* .secondary p{
+  color:var(--sec-color) !important;
+  opacity: 1 !important;
+} */
+  
+  .default p{
+      color:rgb(255, 255, 255) !important;
+  }
+  .tomato p{
+    color:tomato !important;
+    
+ }
+  .DodgerBlue p{
+    color:DodgerBlue !important;
+ }
+  .NeonGreen p{
+    color:rgb(17, 245, 119) !important;
+ }
+  .Aqua p{
+    color:aqua !important;
+ }
+  .Orange p{
+    color:Orange !important;
+ }
+.dem0{
+  color:rgba(255, 166, 0, 0.171);
+}
+.priColorInput,.secColorInput{
+  width:0;
+  height:0;
+  visibility: hidden;
+}
+
+
+
+
+
+.triangle {
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-top: 0;
+  border-bottom: 20px solid rgba(0, 0, 0, 0.87);
+  backdrop-filter: blur(80px);
+  transform:translateX(90px) translateY(-20px)
+}
+.usermenu{
+  position: absolute;
+  width:200px;
+  background-color: rgba(0, 0, 0, 0.87) !important;
+  backdrop-filter: blur(80px) !important;
+  
+  border-radius:3px;
+  display: none;
+  /* overflow: scroll; */
+  
+}
+.usermenu>div>div:hover{
+  background-color: rgba(82, 82, 82, 0.445);
+  cursor: pointer;
+}

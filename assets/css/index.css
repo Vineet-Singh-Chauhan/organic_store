@@ -2,11 +2,15 @@
     padding: 0;
     margin:0;
     box-sizing:border-box;
-    color:white;
+    color:var(--pri-color);
+
 }
 :root{
     --cursive: "Cookie", sans-serif;
     --nunito:'Nunito', sans-serif;
+    --pri-color:white;
+    --sec-color: rgba(0, 0, 0, 0.363);
+    --alpha:0.6;
 }
 body{
     background:url(../images/bg-one.jpg) !important;
@@ -51,7 +55,7 @@ a{
     /* background: linear-gradient(to right, rgba(255, 255, 255, 0.199),rgba(255, 255, 255, 0.199)); */
     box-shadow: 0px 1px 24px -1px  rgba(0, 0, 0, 0.137);
     background: url("../images/drops.png") , linear-gradient(to right, rgba(255, 255, 255, 0.493),rgba(255, 255, 255, 0.527)) !important;
-    color:white !important;
+    color:var(--pri-color) !important;
 
 }
 .navbar-brand{
@@ -60,10 +64,11 @@ a{
     font-weight: 600;
     padding-top: 0 !important;
     padding-bottom: 0 !important;
+    
     /* color:rgba(0, 0, 0, 0.61) !important; */
 }
 .nav-link{
-    color: rgb(255, 255, 255) !important;
+    color: var(--pri-color) !important;
     /* padding-top: 20px !important; */
     padding:12px 20px !important;
 }
@@ -71,17 +76,57 @@ a{
     background-color:rgba(0, 0, 0, 0.664) !important;
     box-shadow: 0px 1px 1px -0px  rgba(0, 0, 0, 0.767);
 }
-.nav-right-grp{
+/* .nav-right-grp{
     position: relative;
 }
 .nav-right-grp i{
     position: absolute;
     left:10px;
-}
+} */
 .nav-item:hover{
     background-color: rgba(255, 255, 255, 0.452);
 }
 
+/*------------modal----------------------*/
+.modal-btn{
+    height: 0;
+    width:0;
+    display: none;
+}
+/* .modal-dialog{
+    backdrop-filter: blur(30px);
+} */
+.modal-bg{
+    background-color: var(--sec-color) !important;
+    backdrop-filter: blur(80px) !important;
+}
+.close-btn{
+    display: none !important;
+}
+.bi-exclamation-diamond{
+    position:absolute;
+    right:10px;
+    top:18px;
+    color:red !important;
+    display: none;
+    font-size: 1.2rem;
+
+}
+.bi-check-circle{
+    position:absolute;
+    right:10px;
+    top:18px;
+    color:rgb(0, 255, 110) !important;
+    display: none;
+    font-size: 1.2rem;
+
+}
+.modalformerror{
+    border-color:red !important;
+}
+.modalformcheck{
+    border-color:rgb(0, 255, 110) !important;
+}
 /*---------------------hero-section------------------------*/
 .hero-div{
     /* height:100vh; */
@@ -94,6 +139,14 @@ a{
     
     /* background: red; */
 }
+.btn-outline-light{
+    border-color: var(--pri-color)  !important;
+    color: var(--pri-color) !important;
+}
+.btn-outline-light:hover{
+    background-color: var(--pri-color) !important;
+    color: black !important;
+}
 .overlay{
     position:absolute;
     height:100%;
@@ -101,7 +154,7 @@ a{
     top:0;
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.185);
+    background-color: var(--sec-color);
     backdrop-filter: blur(5px);
     z-index: -1;
 }
@@ -112,6 +165,9 @@ a{
     text-transform: uppercase;
     font-weight: 700;
     
+}
+.typing{
+    font-size: 1.3rem;
 }
 .scroll-down:hover{
     background-color: rgba(255, 255, 255, 0.452);
@@ -127,7 +183,7 @@ a{
     background-attachment: fixed !important; */
 }
 .col h1, .col h1 i{
-    color:rgba(255, 255, 255, 0.973) !important;
+    color:var(--pri-color) !important;
 }
 .col h1 i{
     font-size: 3rem !important;
@@ -139,7 +195,7 @@ a{
     top:0;
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.192);
+    background-color: var(--sec-color);
     backdrop-filter: blur(8px);
     z-index: -1;
 }
@@ -150,7 +206,7 @@ a{
     top:0;
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.363);
+    background-color: var(--sec-color);
     backdrop-filter: blur(8px);
     z-index: -1;
 }
@@ -172,7 +228,7 @@ a{
 }
 .blue-card{
     
-    color:white;
+    color:var(--pri-color);
     border-radius: 5px;
     border:1px rgba(255, 255, 255, 0.514)solid;
     z-index: -1;
@@ -206,14 +262,15 @@ footer a:hover{
     background-color: transparent !important;
 
 } */
-.form-control-sm{
+.form-control-sm,.form-control{
     background-color: transparent !important;
-    color:white  !important;
+    color:var(--pri-color)  !important;
 
 }
 .form-control-sm::placeholder{
     color:rgba(255, 255, 255, 0.521)  !important;
 }
+
 .cursive{
     font-family: var(--cursive) !important;
     font-size: 3rem;
