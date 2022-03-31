@@ -48,13 +48,13 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Store</a>
+                        <a class="nav-link" href="store.html">Store</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About Us</a>
+                        <a class="nav-link" href="about.html">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Us</a>
+                        <a class="nav-link" href="contact.html">Contact Us</a>
                     </li>
                     <!-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button"
@@ -84,10 +84,10 @@
                                 class="bi bi-person-circle"></i> <span class="welcome-txt">hello</span></div>
 
                                 <!---------------User DROPDOWN------------------------------>
-<div class="usermenu mt-2">
+<div class="usermenu mt-2 modal-bg">
     <div class="triangle"></div>
     <div class="dropdown px-3">
-        <div class=" d-flex flex-column  align-items-center"><i class="bi bi-person-circle"></i></div>
+        <div class=" d-flex flex-column  align-items-center"><i class="bi bi-person-circle usericon"></i></div>
         <p class="usermenu-msg text-center"></p>
         <div class="d-flex justify-content-evenly border-top-bottom py-1">
             <div><i class="bi bi-shop me-4"></i></div> <div><p class="m-0"> Store</p></div>
@@ -201,8 +201,10 @@
     </section>
 
     <!----------------------------range Section------------------------------------->
-    <section class="second-section  container-fluid my-5 p-5">
-        <div class="container">
+    <section class="second-section  container-fluid my-5 p-5 position-relative">
+        <div class="container ">
+                    <div class="overlay3"></div>
+
             <div class="d-flex  flex-column justify-content-center align-items-center my-5">
 
                 <h1> Our Organic Range </h1>
@@ -211,63 +213,90 @@
             <div class=" row gap-2 m-2">
 
                 <div
-                    class="col d-flex  flex-column justify-content-center align-items-center bg-glass p-5 position-relative">
-                    <div class="overlay2"></div>
+                    class="  col d-flex  flex-column justify-content-center align-items-center bg-glass p-5 position-relative" id="rice">
+                    <!-- <div class="overlay2"></div> -->
                     <h1><i class="fa-solid fa-bowl-rice"></i></h1>
                     <h1>Rice</h1>
+                    <div class="overflow-hidden">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit porro libero maxime veritatis nam culpa, quam eum autem ipsam dicta.</p>
+                </div>
                 </div>
                 <div
-                    class="col d-flex  flex-column justify-content-center align-items-center bg-glass  p-5 position-relative">
-                    <div class="overlay2"></div>
+                    class="col d-flex  flex-column justify-content-center align-items-center bg-glass  p-5 position-relative" id="cereals">
+                    <!-- <div class="overlay2"></div> -->
                     <h1><i class="fa-solid fa-wheat-awn"></i></h1>
                     <h1>Cereals</h1>
+                    <div class="overflow-hidden">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit porro libero maxime veritatis nam culpa, quam eum autem ipsam dicta.</p>
+                    </div>
                 </div>
                 <div
-                    class="col d-flex  flex-column justify-content-center align-items-center bg-glass p-5 position-relative">
-                    <div class="overlay2"></div>
+                    class="col d-flex  flex-column justify-content-center align-items-center bg-glass p-5 position-relative" id="eggs">
+                    <!-- <div class="overlay2"></div> -->
                     <h1><i class="fa-solid fa-egg"></i></h1>
                     <h1>Eggs</h1>
+                    <div class="overflow-hidden">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit porro libero maxime veritatis nam culpa, quam eum autem ipsam dicta.</p>
+                    </div>
                 </div>
 
             </div>
             <div class="row gap-2 m-2">
                 <div
-                    class="col d-flex  flex-column justify-content-center align-items-center bg-glass  p-5 position-relative">
-                    <div class="overlay2"></div>
+                    class="col d-flex  flex-column justify-content-center align-items-center bg-glass  p-5 position-relative" id="sugars">
+                    <!-- <div class="overlay2"></div> -->
                     <h1><i class="fa-solid fa-cubes"></i></h1>
                     <h1>Sugars</h1>
+                    <div class="overflow-hidden">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit porro libero maxime veritatis nam culpa, quam eum autem ipsam dicta.</p>
+                    </div>
                 </div>
                 <div
-                    class="col d-flex  flex-column justify-content-center align-items-center bg-glass p-5 position-relative">
+                    class="col d-flex  flex-column justify-content-center align-items-center bg-glass p-5 position-relative" id="tea">
                     <h1><i class="fa-solid fa-mug-hot "></i></h1>
-                    <div class="overlay2"></div>
+                    <!-- <div class="overlay2"></div> -->
                     <h1>Tea</h1>
+                    <div class="overflow-hidden">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit porro libero maxime veritatis nam culpa, quam eum autem ipsam dicta.</p>
+                    </div>
                 </div>
                 <div class="col d-flex  flex-column justify-content-center align-items-center bg-glass p-5 
-        position-relative">
-                    <div class="overlay2"></div>
+        position-relative" id="spices">
+                    <!-- <div class="overlay2"></div> -->
                     <h1><i class="fa-solid fa-mortar-pestle"></i></h1>
                     <h1>Spices</h1>
+                    <div class="overflow-hidden">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit porro libero maxime veritatis nam culpa, quam eum autem ipsam dicta.</p>
+                    </div>
                 </div>
             </div>
             <div class="row gap-2 m-2">
                 <div
-                    class="col d-flex  flex-column justify-content-center align-items-center bg-glass  p-5 position-relative">
-                    <div class="overlay2"></div>
+                    class="col d-flex  flex-column justify-content-center align-items-center bg-glass  p-5 position-relative" id="juices">
+                    <!-- <div class="overlay2"></div> -->
                     <h1><i class="fa-solid fa-martini-glass-citrus"></i></h1>
                     <h1>Juices</h1>
+                    <div class="overflow-hidden">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit porro libero maxime veritatis nam culpa, quam eum autem ipsam dicta.</p>
+                    </div>
                 </div>
                 <div
                     class="col d-flex  flex-column justify-content-center align-items-center bg-glass p-5 position-relative">
                     <h1><i class="fa-solid fa-drumstick-bite"></i></h1>
-                    <div class="overlay2"></div>
+                    <!-- <div class="overlay2"></div> -->
                     <h1>Drumsticks</h1>
+                    <div class="overflow-hidden">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit porro libero maxime veritatis nam culpa, quam eum autem ipsam dicta.</p>
+                    </div>
                 </div>
                 <div
                     class="col d-flex  flex-column justify-content-center align-items-center bg-glass p-5 position-relative">
-                    <div class="overlay2"></div>
+                    <!-- <div class="overlay2"></div> -->
                     <h1><i class="fa-solid fa-bottle-water"></i></h1>
                     <h1>Oils</h1>
+                    <div class="overflow-hidden">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit porro libero maxime veritatis nam culpa, quam eum autem ipsam dicta.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -471,7 +500,7 @@
 
 
     <!------------------Theme Customizer--------------------->
-    <div class="theme-customizer">
+    <div class="theme-customizer modal-bg">
         
     <div class="theme-div  px-2 position-relative">
         
@@ -520,16 +549,18 @@
 
     </div>
 </div>
-
+<script src="assets/scripts/vanilla-tilt.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
     <script src="assets/scripts/index.js"></script>
     <script src="assets/scripts/utilities.js"></script>
+    
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"
         integrity="sha256-b/fLMBwSqO9vy/phDPv6OufPpR+VfUL+OsTEkJMPg+Q=" crossorigin="anonymous"></script>
+        
 </body>
 
 

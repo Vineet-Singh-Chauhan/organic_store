@@ -92,6 +92,7 @@ function defaultColor(){
       e.style.display="none"});
     defaultBtn.querySelector(".bi-check2-square").style.display="block";
     setColor();
+    themeToggle();
 }
 
 const tomatoBtn=document.querySelector(".tomato");
@@ -104,6 +105,7 @@ function tomatoColor(){
       e.style.display="none"});
     tomatoBtn.querySelector(".bi-check2-square").style.display="block";
     setColor();
+    themeToggle();
 }
 
 const DodgerBlueBtn=document.querySelector(".DodgerBlue");
@@ -116,6 +118,7 @@ function DodgerBlueColor(){
       e.style.display="none"});
     DodgerBlueBtn.querySelector(".bi-check2-square").style.display="block";
     setColor();
+    themeToggle();
 }
 
 const NeonGreenBtn=document.querySelector(".NeonGreen");
@@ -128,6 +131,7 @@ function NeonGreenColor(){
       e.style.display="none"});
     NeonGreenBtn.querySelector(".bi-check2-square").style.display="block";
     setColor();
+    themeToggle();
 }
 
 const AquaBtn=document.querySelector(".Aqua");
@@ -140,6 +144,7 @@ function AquaColor(){
       e.style.display="none"});
     AquaBtn.querySelector(".bi-check2-square").style.display="block";
     setColor();
+    themeToggle();
 }
 const OrangeBtn=document.querySelector(".Orange");
 OrangeBtn.addEventListener("click",OrangeColor);
@@ -151,6 +156,7 @@ function OrangeColor(){
       e.style.display="none"});
     OrangeBtn.querySelector(".bi-check2-square").style.display="block";
     setColor();
+    themeToggle();
 }
 
 function setColor(){
@@ -178,6 +184,7 @@ function changepri(){
   setColor();
   document.querySelectorAll(".bi-check2-square").forEach(function(e){
     e.style.display="none"});
+    themeToggle();
 }
 
 const secondaryBtn=document.querySelector(".secondary");
@@ -193,6 +200,7 @@ function changesec(){
   document.querySelectorAll(".bi-check2-square").forEach(function(e){
     e.style.display="none"});
   setColor();
+  themeToggle();
 }
 
 function randomColor(){
@@ -207,10 +215,12 @@ function randomColor(){
   document.documentElement.style.setProperty('--pri-color',randomPriColor );
   
 
-  let randomSecColor = '#'+c()+c()+c();
+  let randomSecColor = 'rgba('+parseInt(c(), 16)+','+parseInt(c(), 16)+','+parseInt(c(), 16)+',0.3)';
   document.documentElement.style.setProperty('--sec-color',randomSecColor );
   setColor();
   document.querySelectorAll(".bi-check2-square").forEach(function(e){
     e.style.display="none"});
+    
+    themeToggle();
   
 }

@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Organic's Store</title>
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/utilities.css">
+    <link rel="stylesheet" href="assets/css/store.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Nunito:ital,wght@0,400;0,500;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css">
+
+</head>
+
+<body onload="hide()">
+    <!---------------Pre-loader------------------------------>
+
+    <div id="preloader">
+        <div class="col-sm-2">
+            <div id="wave1">
+            </div>
+
+        </div>
+    </div>
+
+    <!----------------------------Navbar------------------------------------->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-glass px-2 sticky-top">
+        <div class="container">
+            <a class="navbar-brand pe-3" href="#">Organic's</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="store.html">Store</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu bg-glass-sec" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li> -->
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#">Store</a>
+                    </li> -->
+                </ul>
+                <!-- <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form> -->
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item position-relative" onclick="showMenu()">
+                        <div class="nav-link "><i class="bi bi-person-circle"></i> <span
+                                class="welcome-txt">hello</span></div>
+
+                        <!---------------User DROPDOWN------------------------------>
+                        <div class="usermenu mt-2 modal-bg">
+                            <div class="triangle"></div>
+                            <div class="dropdown px-3">
+                                <div class=" d-flex flex-column  align-items-center"><i
+                                        class="bi bi-person-circle usericon"></i></div>
+                                <p class="usermenu-msg text-center"></p>
+                                <div class="d-flex justify-content-evenly border-top-bottom py-1">
+                                    <div><i class="bi bi-shop me-4"></i></div>
+                                    <div>
+                                        <p class="m-0"> Store</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-evenly border-top-bottom py-1">
+                                    <div><i class="bi bi-gear"></i></div>
+                                    <div>
+                                        <p class="m-0"> Settings</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-evenly border-top-bottom py-1">
+                                    <div><i class="bi bi-envelope-check"></i></div>
+                                    <div>
+                                        <p class="m-0"> Contact</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-evenly py-1">
+                                    <button type="button" class="btn btn-outline-light my-2">Sign Up / Log In</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item theme-btn">
+                        <div class="nav-link  nav-right-grp">
+                            <i class="bi bi-brightness-high-fill"></i>
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- <div class="position-relative modal-bg "> -->
+
+
+    <!----------------------------Store-slider------------------------------------->
+    <div class=" container-fluid position-relative modal-bg">
+        <!-- <div class=" position-absolute store-slider modal-bg p-0 m-0">
+                <div class=" ">
+                    <div class=" category-head d-flex align-items-center ps-2 py-2">
+                        <div class="circle"><i class="bi bi-list me-3 ps-1"></i> </div>Categories
+                    </div>
+
+
+                    <div class="category selected d-flex ps-2 align-items-center py-2">
+                        <div class="circle"><i class="fa-solid fa-bowl-rice mt-1"></i></div>Rice
+                    </div>
+
+
+                    <div class="category  d-flex ps-2 align-items-center py-2">
+                        <div class="circle"><i class="fa-solid fa-wheat-awn"></i></div> Cereals
+                    </div>
+
+
+                    <div class="category  d-flex ps-2 align-items-center py-2">
+                        <div class="circle"><i class="fa-solid fa-egg"></i></div>Eggs
+                    </div>
+
+                    <div class="category  d-flex ps-2 align-items-center py-2">
+                        <div class="circle d-flex justify-content-center align-items-center"><i
+                                class="fa-solid fa-cubes"></i></div> Sugars
+                    </div>
+
+                    <div class="category  d-flex ps-2 align-items-center py-2">
+                        <div class="circle"><i class="fa-solid fa-mug-hot "></i></div>Tea
+                    </div>
+
+                    <div class="category  d-flex ps-2 align-items-center py-2">
+                        <div class="circle"><i class="fa-solid fa-mortar-pestle"></i></div>Spices
+                    </div>
+
+                    <div class="category  d-flex ps-2 align-items-center py-2">
+                        <div class="circle"><i class="fa-solid fa-martini-glass-citrus"></i></div> Juices
+                    </div>
+
+                    <div class="category  d-flex ps-2 align-items-center py-2">
+                        <div class="circle"><i class="fa-solid fa-bottle-water"></i></div>Oils
+                    </div>
+
+                    <div class="category  d-flex ps-2 align-items-center py-2 pe-3">
+                        <div class="circle"><i class="fa-solid fa-drumstick-bite"></i></div>Drumsticks
+                    </div>
+
+
+
+                </div>
+            </div> -->
+        <!----------------------------Store-main------------------------------------->
+        <div class=" container py-3 ">
+            <div class=" store-main  container-fluid">
+                <div class="top-panel d-flex justify-content-center py-3 ">
+
+                    <div class="input-group mb-3 w-75">
+                        <input type="text" class="form-control" placeholder="Search here"
+                            aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button type="button" class="btn btn-light">Search</button>
+                    </div>
+
+                </div>
+                <div class="">
+                    <div class="d-flex  flex-column justify-content-center align-items-start border-bottom my-5">
+                        <h1>Top deals</h1>
+
+                    </div>
+                    <div class="row gap-2 ">
+                        <div class="col">
+                            <div class="card modal-bg position-relative" style="width: 18rem;">
+                                <img src="assets/images/bg-two.jpg" class="card-img-top" alt="kidneys">
+                                <div class="card-body">
+                                    <h5 class="card-title">Organic Kidney Beans</h5>
+                                    <p class="card-text text-end">&#8377; <s>120 </s></p>
+                                    <div class="d-flex justify-content-between">
+                                        <p class="card-text text-start">Discount</p>
+                                        <p>&#8377; 20 </p>
+                                    </div>
+                                    <p class="card-text text-end border-top-bottom">&#8377; 100</p>
+
+
+                                    <button type="button" class="btn btn-light ms-auto cartBtn">Add to Cart</button>
+                                </div>
+                                <div
+                                    class="wish modal-bg d-flex flex-column justify-content-between align-items-center text-center ">
+                                    <div class="wishStatus large">
+                                        <i class="bi bi-heart "></i>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            
+
+
+
+
+                        </div>
+
+                        <div class="col">
+                            <div class="card modal-bg position-relative" style="width: 18rem;">
+                                <img src="assets/images/bg-two.jpg" class="card-img-top" alt="kidneys">
+                                <div class="card-body">
+                                    <h5 class="card-title">Organic Kidney Beans</h5>
+                                    <p class="card-text text-end">&#8377; <s>120 </s></p>
+                                    <div class="d-flex justify-content-between">
+                                        <p class="card-text text-start">Discount</p>
+                                        <p>&#8377; 20 </p>
+                                    </div>
+                                    <p class="card-text text-end border-top-bottom">&#8377; 100</p>
+
+
+                                    <button type="button" class="btn btn-light ms-auto cartBtn" onclick="addToCart()">Add to Cart</button>
+                                </div>
+                                <div
+                                    class="wish modal-bg d-flex flex-column justify-content-between align-items-center text-center ">
+                                    <div class="wishStatus large">
+                                        <i class="bi bi-heart "></i>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            
+
+
+
+
+                        </div>
+
+                        <div class="col">
+                            <div class="card modal-bg position-relative" style="width: 18rem;">
+                                <img src="assets/images/bg-two.jpg" class="card-img-top" alt="kidneys">
+                                <div class="card-body">
+                                    <h5 class="card-title">Organic Kidney Beans</h5>
+                                    <p class="card-text text-end">&#8377; <s>120 </s></p>
+                                    <div class="d-flex justify-content-between">
+                                        <p class="card-text text-start">Discount</p>
+                                        <p>&#8377; 20 </p>
+                                    </div>
+                                    <p class="card-text text-end border-top-bottom">&#8377; 100</p>
+
+
+                                    <button type="button" class="btn btn-light ms-auto cartBtn">Add to Cart</button>
+                                </div>
+                                <div
+                                    class="wish modal-bg d-flex flex-column justify-content-between align-items-center text-center ">
+                                    <div class="wishStatus large">
+                                        <i class="bi bi-heart "></i>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            
+
+
+
+
+                        </div>
+
+
+                        <div class="col">
+                            <div class="card modal-bg position-relative" style="width: 18rem;">
+                                <img src="assets/images/bg-two.jpg" class="card-img-top" alt="kidneys">
+                                <div class="card-body">
+                                    <h5 class="card-title">Organic Kidney Beans</h5>
+                                    <p class="card-text text-end">&#8377; <s>120 </s></p>
+                                    <div class="d-flex justify-content-between">
+                                        <p class="card-text text-start">Discount</p>
+                                        <p>&#8377; 20 </p>
+                                    </div>
+                                    <p class="card-text text-end border-top-bottom">&#8377; 100</p>
+
+
+                                    <button type="button" class="btn btn-light ms-auto cartBtn">Add to Cart</button>
+                                </div>
+                                <div
+                                    class="wish modal-bg d-flex flex-column justify-content-between align-items-center text-center ">
+                                    <div class="wishStatus large">
+                                        <i class="bi bi-heart "></i>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            
+
+
+
+
+                        </div>
+
+                        <div class="col">
+                            <div class="card modal-bg position-relative" style="width: 18rem;">
+                                <img src="assets/images/bg-two.jpg" class="card-img-top" alt="kidneys">
+                                <div class="card-body">
+                                    <h5 class="card-title">Organic Kidney Beans</h5>
+                                    <p class="card-text text-end">&#8377; <s>120 </s></p>
+                                    <div class="d-flex justify-content-between">
+                                        <p class="card-text text-start">Discount</p>
+                                        <p>&#8377; 20 </p>
+                                    </div>
+                                    <p class="card-text text-end border-top-bottom">&#8377; 100</p>
+
+
+                                    <button type="button" class="btn btn-light ms-auto cartBtn">Add to Cart</button>
+                                </div>
+                                <div
+                                    class="wish modal-bg d-flex flex-column justify-content-between align-items-center text-center ">
+                                    <div class="wishStatus large">
+                                        <i class="bi bi-heart "></i>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            
+
+
+
+
+                        </div>
+
+
+                        <div class="col">
+                            <div class="card modal-bg position-relative" style="width: 18rem;">
+                                <img src="assets/images/bg-two.jpg" class="card-img-top" alt="kidneys">
+                                <div class="card-body">
+                                    <h5 class="card-title">Organic Kidney Beans</h5>
+                                    <p class="card-text text-end">&#8377; <s>120 </s></p>
+                                    <div class="d-flex justify-content-between">
+                                        <p class="card-text text-start">Discount</p>
+                                        <p>&#8377; 20 </p>
+                                    </div>
+                                    <p class="card-text text-end border-top-bottom">&#8377; 100</p>
+
+
+                                    <button type="button" class="btn btn-light ms-auto cartBtn">Add to Cart</button>
+                                </div>
+                                <div
+                                    class="wish modal-bg d-flex flex-column justify-content-between align-items-center text-center ">
+                                    <div class="wishStatus large">
+                                        <i class="bi bi-heart "></i>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            
+
+
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        <div class="container-fluid  bg-glass position-relative">
+            <div class="container pt-5">
+                <div class="overlay3">
+
+                </div>
+                <div class="row gap-3">
+                    <div class="col-md-2">
+                        <h1 class="cursive">Organic's</h1>
+                        <div class="ps-1 ">
+                            <span class="mt">Follow Us</span>
+                            <div><i class="bi bi-facebook me-2"></i> <i class="bi bi-twitter me-2"></i> <i
+                                    class="bi bi-instagram"></i>
+                            </div>
+                            <p>Like & Share</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2 me-5">
+                        <h3>Get In Touch</h3>
+                        <p> ABC Consumer Products ,
+                            Greater Ratnagiri, India</p>
+                        <div>customercare@organic.com</div>
+                        <p>+91 1234567890</p>
+                    </div>
+                    <div class="col-md-2">
+                        <h3>Quick Links</h3>
+                        <a href="">Home</a><br>
+                        <a href="">About Us</a><br>
+                        <a href="">Products</a><br>
+                        <a href="">Blog</a><br>
+                        <a href="">Recipes</a><br>
+                        <a href="">Contact</a><br>
+                        <a href="">FAQs</a><br>
+
+                    </div>
+
+                    <div class="col-md-2">
+                        <h3>Useful Links</h3>
+                        <a href="">Terms & Conditions</a><br>
+                        <a href="">Privacy Policy</a><br>
+                        <a href="">Sitemap</a><br>
+                        <a href="">Buy Now</a><br>
+
+
+                    </div>
+                    <div class="col-md-2">
+                        <h3>Subscribe our newsletter</h3>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Email address :</label>
+                            <input class="form-control form-control-sm" type="text" placeholder="Email address"
+                                aria-label=".form-control-sm example">
+
+                        </div>
+                        <button type="button" class="btn btn-outline-light btn-sm">Subscribe</button>
+
+
+
+                    </div>
+
+                </div>
+                <div class=" row d-flex text-center position-relative">
+
+                    <p class="pt-5 ">&copy; Copyright 2022 - Organic's. All Rights Reserved.</p>
+                </div>
+
+            </div>
+        </div>
+
+
+    </footer>
+
+
+    <!------------------back-to-top-btn--------------------->
+    <div id="back2top">
+        <div class="back2top d-flex justify-content-center align-items-center" onclick="topFunction()">
+            <i class="bi bi-arrow-up"></i>
+        </div>
+    </div>
+
+
+    <!------------------Theme Customizer--------------------->
+    <div class="theme-customizer modal-bg">
+
+        <div class="theme-div  px-2 position-relative">
+
+            <p class="border-top-bottom py-2 text-white">
+                Choose your desired color-theme
+            </p>
+            <div class="color-palette default d-flex justify-content-between align-items-center">
+                <p class="my-2 px-2">Default</p> <i class="bi bi-check2-square"></i>
+            </div>
+            <div class="color-palette tomato d-flex justify-content-between align-items-center">
+                <p class="my-2 px-2">Tomato </p> <i class="bi bi-check2-square"></i>
+            </div>
+            <div class="color-palette DodgerBlue d-flex justify-content-between align-items-center">
+                <p class="my-2 px-2">DodgerBlue</p><i class="bi bi-check2-square"></i>
+            </div>
+            <div class="color-palette NeonGreen d-flex justify-content-between align-items-center">
+                <p class="my-2 px-2">NeonGreen</p><i class="bi bi-check2-square"></i>
+            </div>
+            <div class="color-palette Aqua d-flex justify-content-between align-items-center">
+                <p class="my-2 px-2"> Aqua</p><i class="bi bi-check2-square"></i>
+            </div>
+            <div class="color-palette Orange d-flex justify-content-between align-items-center">
+                <p class="my-2 px-2">Orange</p><i class="bi bi-check2-square"></i>
+            </div>
+
+
+            <p class="border-top-bottom py-2 mt-5 text-white"> Or Customize your own theme</p>
+
+
+            <div class="color-palette primary d-flex justify-content-between ">
+                <p class="my-2 px-2">Primary Color</p>
+                <p id="priColorValue" class="my-2 px-2"></p>
+                <input type="color" class="priColorInput" onchange="changepri()">
+            </div>
+            <div class="color-palette secondary d-flex justify-content-between ">
+                <p class="my-2 px-2">Secondary Color</p>
+                <p id="secColorValue" class="my-2 px-2"></p>
+                <input type="color" class="secColorInput" onchange="changesec()">
+
+            </div>
+
+
+            <p class="border-top-bottom py-2 mt-5 text-white">Or you can get random color</p>
+
+            <div class="color-palette ramdom mb-5" onclick="randomColor()">
+                <p class="my-2 px-2">Random Colors</p>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="assets/scripts/index.js"></script>
+    <script src="assets/scripts/utilities.js"></script>
+    <script src="assets/scripts/store.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"
+        integrity="sha256-b/fLMBwSqO9vy/phDPv6OufPpR+VfUL+OsTEkJMPg+Q=" crossorigin="anonymous"></script>
+</body>
+
+
+
+</html>

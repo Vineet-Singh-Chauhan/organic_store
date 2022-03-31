@@ -148,8 +148,8 @@
       height: 100%;
       width:300px;
       overflow-y: scroll;
-      background-color: var(--sec-color) !important;
-      backdrop-filter: blur(80px) !important;
+      /* background-color: var(--sec-color) !important;
+      backdrop-filter: blur(80px) !important; */
       transform: translateX(300px);
       transition: 0.7s;
 
@@ -236,6 +236,9 @@
   display: none;
   /* overflow: scroll; */
   
+}
+.usericon{
+  font-size: 3rem;
 }
 .usermenu>div>div:hover{
   background-color: rgba(82, 82, 82, 0.445);

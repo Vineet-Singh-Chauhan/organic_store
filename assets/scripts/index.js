@@ -1,8 +1,8 @@
-function foo() {
-    console.log("hello")
-    document.querySelector('#staticBackdrop');
-}
-console.log("hello")
+// function foo() {
+//     console.log("hello")
+//     document.querySelector('#staticBackdrop');
+// }
+// console.log("hello")
 
 function entry() {
 
@@ -49,7 +49,7 @@ function setErrorMsg(a, b) {
     a.className = "form-control username modalformerror";
     a.parentElement.querySelector(".bi-exclamation-diamond").style.display = "block";
     a.parentElement.querySelector("p").innerText = b;
-    a.parentElement.querySelector("p").style.color = "red";
+    a.parentElement.querySelector("p").style.color = "tomato";
 }
 
 
@@ -101,4 +101,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     splide2.mount();
+});
+
+
+VanillaTilt.init(document.querySelectorAll(".second-section .col"),{
+    max: 25,
+    speed: 400,
+    glare:true,
+    "max-glare":1
 });
