@@ -112,3 +112,9 @@ VanillaTilt.init(document.querySelectorAll(".second-section .col"),{
     "max-glare":1
 });
 
+AOS.init({
+    duration:1000,
+    offset:120,
+    easing:'ease'
+
+})

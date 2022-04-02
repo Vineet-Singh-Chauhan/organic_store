@@ -151,7 +151,7 @@
       /* background-color: var(--sec-color) !important;
       backdrop-filter: blur(80px) !important; */
       transform: translateX(300px);
-      transition: 0.7s;
+      transition: 0.4s;
 
   }
   
