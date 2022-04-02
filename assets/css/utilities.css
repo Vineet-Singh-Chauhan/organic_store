@@ -154,6 +154,7 @@
       transition: 0.7s;
 
   }
+  
   .theme-div{
       padding-top:80px;
 
@@ -244,3 +245,4 @@
   background-color: rgba(82, 82, 82, 0.445);
   cursor: pointer;
 }
+
