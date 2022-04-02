@@ -40,6 +40,10 @@ function addToCart(){
 }
 
 
+let userhere = sessionStorage.getItem('user1');
+document.querySelector(".welcome-txt").innerText = userhere;
+document.querySelector(".usermenu-msg").innerText ="Hello "+ userhere;
+
 let likeBtn=document.querySelector(".wish");
 likeBtn.addEventListener("click",like);
 

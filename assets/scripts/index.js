@@ -16,6 +16,7 @@ function entry() {
     }
     else {
         setSuccessMsg(username, usernameVal);
+        sessionStorage.setItem("user1", usernameVal);
     }
 
 }
@@ -110,3 +111,4 @@ VanillaTilt.init(document.querySelectorAll(".second-section .col"),{
     glare:true,
     "max-glare":1
 });
+

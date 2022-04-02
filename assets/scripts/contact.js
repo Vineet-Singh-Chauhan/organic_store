@@ -99,7 +99,9 @@ function setSuccessMsg(){
         );
     }
     }
-
+    let userhere = sessionStorage.getItem('user1');
+    document.querySelector(".welcome-txt").innerText = userhere;
+    document.querySelector(".usermenu-msg").innerText ="Hello "+ userhere;
 function validate() {
     let firstName = document.getElementById("firstname");
     let lastName = document.getElementById("lastname");
