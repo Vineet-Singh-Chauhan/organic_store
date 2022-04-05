@@ -135,9 +135,9 @@
                     <div class="container d-flex justify-content-between">
             <p class="storeBtn">All<i class="bi bi-shop ms-2"></i></p>
             
-            <div class="input-group mb-3 w-50">
-                <input type="text" class="form-control" placeholder="Search here"
-                    aria-label="Recipient's username" aria-describedby="button-addon2">
+            <div class="input-group mb-3 w-50 " >
+                <input type="text" class="form-control " placeholder="Search here"
+                    aria-label="Recipient's username" aria-describedby="button-addon2" id="searchBar">
                 <button type="button" class="btn btn-light">Search</button>
             </div>
             <div class="circle position-relative">
@@ -154,34 +154,34 @@
             <p class="border-top-bottom py-2 text-white text-center">
                 Categories
             </p>
-            <div class="  selected d-flex justify-content-between align-items-center" >
-                <p class="my-2 px-2"> <i class="bi bi-gift-fill  me-2"> </i> Top Deals</p>
+            <div class="top-deals-category selected d-flex justify-content-between align-items-center" >
+                <a href="#top-deals"> <p class="my-2 px-2"> <i class="bi bi-gift-fill  me-2"> </i> Top Deals</p></a>
             </div>
-            <div class="  d-flex justify-content-between align-items-center" >
-                <p class="my-2 px-2"> <i class="fa-solid fa-bowl-rice me-2"></i> Rice </p> 
+            <div class="rice-category  d-flex justify-content-between align-items-center" >
+                <a href="#rice"> <p class="my-2 px-2"> <i class="fa-solid fa-bowl-rice me-2"></i> Rice </p> </a>
             </div>
-            <div class="  d-flex justify-content-between align-items-center">
-                <p class="my-2 px-2"> <i class="fa-solid fa-wheat-awn me-2"></i>Cereals</p>
+            <div class="cereals-category  d-flex justify-content-between align-items-center">
+                <a href="#cereals">  <p class="my-2 px-2"> <i class="fa-solid fa-wheat-awn me-2"></i>Cereals</p></a>
             </div>
-            <div class=" Eggs d-flex justify-content-between align-items-center">
+            <div class=" Eggs-category d-flex justify-content-between align-items-center">
                 <p class="my-2 px-2"> <i class="fa-solid fa-egg me-2"></i>Eggs</p>
             </div>
-            <div class=" Sugars d-flex justify-content-between align-items-center">
+            <div class=" Sugars-category d-flex justify-content-between align-items-center">
                 <p class="my-2 px-2"><i class="fa-solid fa-cubes me-2"></i> Sugars</p>
             </div>
-            <div class=" Tea d-flex justify-content-between align-items-center">
+            <div class=" Tea-category d-flex justify-content-between align-items-center">
                 <p class="my-2 px-2"> <i class="fa-solid fa-mug-hot me-2 "></i>Tea</p>
             </div>
-            <div class=" Spices d-flex justify-content-between align-items-center">
+            <div class=" Spices-category d-flex justify-content-between align-items-center">
                 <p class="my-2 px-2"> <i class="fa-solid fa-mortar-pestle me-2"></i>Spices</p>
             </div>
-            <div class=" Juices  d-flex justify-content-between align-items-center">
+            <div class=" Juices-category  d-flex justify-content-between align-items-center">
                 <p class="my-2 px-2"> <i class="fa-solid fa-martini-glass-citrus me-2"></i>Juices</p>
             </div>
-            <div class=" Drumsticks  d-flex justify-content-between align-items-center">
+            <div class=" Drumsticks-category  d-flex justify-content-between align-items-center">
                 <p class="my-2 px-2"> <i class="fa-solid fa-drumstick-bite me-2"></i>Drumsticks</p>
             </div>
-            <div class=" Oils  d-flex justify-content-between align-items-center">
+            <div class=" Oils-category  d-flex justify-content-between align-items-center">
                 <p class="my-2 px-2"><i class="fa-solid fa-bottle-water me-2"></i>Oils</p>
             </div>
     
@@ -197,14 +197,14 @@
         <!----------------------------Store-main------------------------------------->
         <div class=" container p-3 ">
             <div class=" store-main  container-fluid">
-                
+                <section class="top-deals" id="top-deals">
                 <div class="">
                     <div class="d-flex  flex-column justify-content-center align-items-start border-bottom my-5">
                         <h1>Top deals</h1>
 
                     </div>
-                    <div class="row gap-2 ">
-                        <div class="col d-flex justify-content-center">
+                    <div class="d-flex flex-wrap gap-2 justify-content-evenly ">
+                        <div class=" d-flex justify-content-center">
                             <div class="card modal-bg position-relative" style="width: 18rem;">
                                 <img src="assets/images/bg-two.jpg" class="card-img-top" alt="kidneys">
                                 <div class="card-body">
@@ -235,7 +235,7 @@
 
                         </div>
 
-                        <div class="col d-flex justify-content-center">
+                        <div class=" d-flex justify-content-center">
                             <div class="card modal-bg position-relative" style="width: 18rem;">
                                 <img src="assets/images/bg-two.jpg" class="card-img-top" alt="kidneys">
                                 <div class="card-body">
@@ -266,7 +266,7 @@
 
                         </div>
 
-                        <div class="col d-flex justify-content-center">
+                        <div class=" d-flex justify-content-center">
                             <div class="card modal-bg position-relative" style="width: 18rem;">
                                 <img src="assets/images/bg-two.jpg" class="card-img-top" alt="kidneys">
                                 <div class="card-body">
@@ -298,7 +298,7 @@
                         </div>
 
 
-                        <div class="col d-flex justify-content-center">
+                        <div class=" d-flex justify-content-center">
                             <div class="card modal-bg position-relative" style="width: 18rem;">
                                 <img src="assets/images/bg-two.jpg" class="card-img-top" alt="kidneys">
                                 <div class="card-body">
@@ -329,7 +329,7 @@
 
                         </div>
 
-                        <div class="col d-flex justify-content-center">
+                        <div class=" d-flex justify-content-center">
                             <div class="card modal-bg position-relative" style="width: 18rem;">
                                 <img src="assets/images/bg-two.jpg" class="card-img-top" alt="kidneys">
                                 <div class="card-body">
@@ -361,7 +361,7 @@
                         </div>
 
 
-                        <div class="col d-flex justify-content-center">
+                        <div class=" d-flex justify-content-center">
                             <div class="card modal-bg position-relative" style="width: 18rem;">
                                 <img src="assets/images/bg-two.jpg" class="card-img-top" alt="kidneys">
                                 <div class="card-body">
@@ -394,6 +394,411 @@
                     </div>
 
                 </div>
+            </section>
+
+
+
+
+            <section class="rice" id="rice">
+                <div class="">
+                    <div class="d-flex  flex-column justify-content-center align-items-start border-bottom my-5">
+                        <h1>Basmati Steam Rices</h1>
+
+                    </div>
+                    <div class="d-flex flex-wrap gap-2 justify-content-evenly">
+                        <div class="  d-flex justify-content-center">
+                            <div class="card modal-bg position-relative" style="width: 18rem;">
+                                <img src="assets/images/bg-two.jpg" class="card-img-top" alt="kidneys">
+                                <div class="card-body">
+                                    <h5 class="card-title">Pusa 1121 Basmati </h5>
+                                    <p class="card-text text-end">&#8377; <s>120 </s></p>
+                                    <div class="d-flex justify-content-between">
+                                        <p class="card-text text-start">Discount</p>
+                                        <p>&#8377; 20 </p>
+                                    </div>
+                                    <p class="card-text text-end border-top-bottom">&#8377; 100</p>
+
+
+                                    <button type="button" class="btn btn-light ms-auto cartBtn">Add to Cart</button>
+                                </div>
+                                <div
+                                    class="wish modal-bg d-flex flex-column justify-content-between align-items-center text-center ">
+                                    <div class="wishStatus large">
+                                        <i class="bi bi-heart "></i>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            
+
+
+
+
+                        </div>
+
+                        <div class=" d-flex justify-content-center">
+                            <div class="card modal-bg position-relative" style="width: 18rem;">
+                                <img src="assets/images/bg-two.jpg" class="card-img-top" alt="kidneys">
+                                <div class="card-body">
+                                    <h5 class="card-title">Pusa 1121 Basmati </h5>
+                                    <p class="card-text text-end">&#8377; <s>120 </s></p>
+                                    <div class="d-flex justify-content-between">
+                                        <p class="card-text text-start">Discount</p>
+                                        <p>&#8377; 20 </p>
+                                    </div>
+                                    <p class="card-text text-end border-top-bottom">&#8377; 100</p>
+
+
+                                    <button type="button" class="btn btn-light ms-auto cartBtn" onclick="addToCart()">Add to Cart</button>
+                                </div>
+                                <div
+                                    class="wish modal-bg d-flex flex-column justify-content-between align-items-center text-center ">
+                                    <div class="wishStatus large">
+                                        <i class="bi bi-heart "></i>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            
+
+
+
+
+                        </div>
+
+                        <div class=" d-flex justify-content-center">
+                            <div class="card modal-bg position-relative" style="width: 18rem;">
+                                <img src="assets/images/bg-two.jpg" class="card-img-top" alt="kidneys">
+                                <div class="card-body">
+                                    <h5 class="card-title">Pusa 1121 Basmati </h5>
+                                    <p class="card-text text-end">&#8377; <s>120 </s></p>
+                                    <div class="d-flex justify-content-between">
+                                        <p class="card-text text-start">Discount</p>
+                                        <p>&#8377; 20 </p>
+                                    </div>
+                                    <p class="card-text text-end border-top-bottom">&#8377; 100</p>
+
+
+                                    <button type="button" class="btn btn-light ms-auto cartBtn">Add to Cart</button>
+                                </div>
+                                <div
+                                    class="wish modal-bg d-flex flex-column justify-content-between align-items-center text-center ">
+                                    <div class="wishStatus large">
+                                        <i class="bi bi-heart "></i>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            
+
+
+
+
+                        </div>
+
+
+                        <div class=" d-flex justify-content-center">
+                            <div class="card modal-bg position-relative" style="width: 18rem;">
+                                <img src="assets/images/bg-two.jpg" class="card-img-top" alt="kidneys">
+                                <div class="card-body">
+                                    <h5 class="card-title">Pusa 1121 Basmati </h5>
+                                    <p class="card-text text-end">&#8377; <s>120 </s></p>
+                                    <div class="d-flex justify-content-between">
+                                        <p class="card-text text-start">Discount</p>
+                                        <p>&#8377; 20 </p>
+                                    </div>
+                                    <p class="card-text text-end border-top-bottom">&#8377; 100</p>
+
+
+                                    <button type="button" class="btn btn-light ms-auto cartBtn">Add to Cart</button>
+                                </div>
+                                <div
+                                    class="wish modal-bg d-flex flex-column justify-content-between align-items-center text-center ">
+                                    <div class="wishStatus large">
+                                        <i class="bi bi-heart "></i>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            
+
+
+
+
+                        </div>
+
+                        <div class=" d-flex justify-content-center">
+                            <div class="card modal-bg position-relative" style="width: 18rem;">
+                                <img src="assets/images/bg-two.jpg" class="card-img-top" alt="kidneys">
+                                <div class="card-body">
+                                    <h5 class="card-title">Pusa 1121 Basmati </h5>
+                                    <p class="card-text text-end">&#8377; <s>120 </s></p>
+                                    <div class="d-flex justify-content-between">
+                                        <p class="card-text text-start">Discount</p>
+                                        <p>&#8377; 20 </p>
+                                    </div>
+                                    <p class="card-text text-end border-top-bottom">&#8377; 100</p>
+
+
+                                    <button type="button" class="btn btn-light ms-auto cartBtn">Add to Cart</button>
+                                </div>
+                                <div
+                                    class="wish modal-bg d-flex flex-column justify-content-between align-items-center text-center ">
+                                    <div class="wishStatus large">
+                                        <i class="bi bi-heart "></i>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            
+
+
+
+
+                        </div>
+
+
+                        <div class=" d-flex justify-content-center">
+                            <div class="card modal-bg position-relative" style="width: 18rem;">
+                                <img src="assets/images/bg-two.jpg" class="card-img-top" alt="kidneys">
+                                <div class="card-body">
+                                    <h5 class="card-title">Organic Kidney Beans</h5>
+                                    <p class="card-text text-end">&#8377; <s>120 </s></p>
+                                    <div class="d-flex justify-content-between">
+                                        <p class="card-text text-start">Discount</p>
+                                        <p>&#8377; 20 </p>
+                                    </div>
+                                    <p class="card-text text-end border-top-bottom">&#8377; 100</p>
+
+
+                                    <button type="button" class="btn btn-light ms-auto cartBtn">Add to Cart</button>
+                                </div>
+                                <div
+                                    class="wish modal-bg d-flex flex-column justify-content-between align-items-center text-center ">
+                                    <div class="wishStatus large">
+                                        <i class="bi bi-heart "></i>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            
+
+
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="cereals" id="cereals">
+
+                <div class="">
+                    <div class="d-flex  flex-column justify-content-center align-items-start border-bottom my-5">
+                        <h1>Wheat</h1>
+
+                    </div>
+                    <div class="d-flex flex-wrap gap-2 justify-content-evenly">
+                        <div class="  d-flex justify-content-center">
+                            <div class="card modal-bg position-relative" style="width: 18rem;">
+                                <img src="assets/images/bg-two.jpg" class="card-img-top" alt="kidneys">
+                                <div class="card-body">
+                                    <h5 class="card-title">Sihore Wheat </h5>
+                                    <p class="card-text text-end">&#8377; <s>120 </s></p>
+                                    <div class="d-flex justify-content-between">
+                                        <p class="card-text text-start">Discount</p>
+                                        <p>&#8377; 20 </p>
+                                    </div>
+                                    <p class="card-text text-end border-top-bottom">&#8377; 100</p>
+
+
+                                    <button type="button" class="btn btn-light ms-auto cartBtn">Add to Cart</button>
+                                </div>
+                                <div
+                                    class="wish modal-bg d-flex flex-column justify-content-between align-items-center text-center ">
+                                    <div class="wishStatus large">
+                                        <i class="bi bi-heart "></i>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            
+
+
+
+
+                        </div>
+
+                        <div class=" d-flex justify-content-center">
+                            <div class="card modal-bg position-relative" style="width: 18rem;">
+                                <img src="assets/images/bg-two.jpg" class="card-img-top" alt="kidneys">
+                                <div class="card-body">
+                                    <h5 class="card-title">Sihore Wheat </h5>
+                                    <p class="card-text text-end">&#8377; <s>120 </s></p>
+                                    <div class="d-flex justify-content-between">
+                                        <p class="card-text text-start">Discount</p>
+                                        <p>&#8377; 20 </p>
+                                    </div>
+                                    <p class="card-text text-end border-top-bottom">&#8377; 100</p>
+
+
+                                    <button type="button" class="btn btn-light ms-auto cartBtn" onclick="addToCart()">Add to Cart</button>
+                                </div>
+                                <div
+                                    class="wish modal-bg d-flex flex-column justify-content-between align-items-center text-center ">
+                                    <div class="wishStatus large">
+                                        <i class="bi bi-heart "></i>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            
+
+
+
+
+                        </div>
+
+                        <div class=" d-flex justify-content-center">
+                            <div class="card modal-bg position-relative" style="width: 18rem;">
+                                <img src="assets/images/bg-two.jpg" class="card-img-top" alt="kidneys">
+                                <div class="card-body">
+                                    <h5 class="card-title">Sihore Wheat </h5>
+                                    <p class="card-text text-end">&#8377; <s>120 </s></p>
+                                    <div class="d-flex justify-content-between">
+                                        <p class="card-text text-start">Discount</p>
+                                        <p>&#8377; 20 </p>
+                                    </div>
+                                    <p class="card-text text-end border-top-bottom">&#8377; 100</p>
+
+
+                                    <button type="button" class="btn btn-light ms-auto cartBtn">Add to Cart</button>
+                                </div>
+                                <div
+                                    class="wish modal-bg d-flex flex-column justify-content-between align-items-center text-center ">
+                                    <div class="wishStatus large">
+                                        <i class="bi bi-heart "></i>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            
+
+
+
+
+                        </div>
+
+
+                        <div class=" d-flex justify-content-center">
+                            <div class="card modal-bg position-relative" style="width: 18rem;">
+                                <img src="assets/images/bg-two.jpg" class="card-img-top" alt="kidneys">
+                                <div class="card-body">
+                                    <h5 class="card-title">Sihore Wheat </h5>
+                                    <p class="card-text text-end">&#8377; <s>120 </s></p>
+                                    <div class="d-flex justify-content-between">
+                                        <p class="card-text text-start">Discount</p>
+                                        <p>&#8377; 20 </p>
+                                    </div>
+                                    <p class="card-text text-end border-top-bottom">&#8377; 100</p>
+
+
+                                    <button type="button" class="btn btn-light ms-auto cartBtn">Add to Cart</button>
+                                </div>
+                                <div
+                                    class="wish modal-bg d-flex flex-column justify-content-between align-items-center text-center ">
+                                    <div class="wishStatus large">
+                                        <i class="bi bi-heart "></i>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            
+
+
+
+
+                        </div>
+
+                        <div class=" d-flex justify-content-center">
+                            <div class="card modal-bg position-relative" style="width: 18rem;">
+                                <img src="assets/images/bg-two.jpg" class="card-img-top" alt="kidneys">
+                                <div class="card-body">
+                                    <h5 class="card-title">Pusa 1121 Basmati </h5>
+                                    <p class="card-text text-end">&#8377; <s>120 </s></p>
+                                    <div class="d-flex justify-content-between">
+                                        <p class="card-text text-start">Discount</p>
+                                        <p>&#8377; 20 </p>
+                                    </div>
+                                    <p class="card-text text-end border-top-bottom">&#8377; 100</p>
+
+
+                                    <button type="button" class="btn btn-light ms-auto cartBtn">Add to Cart</button>
+                                </div>
+                                <div
+                                    class="wish modal-bg d-flex flex-column justify-content-between align-items-center text-center ">
+                                    <div class="wishStatus large">
+                                        <i class="bi bi-heart "></i>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            
+
+
+
+
+                        </div>
+
+
+                        <div class=" d-flex justify-content-center">
+                            <div class="card modal-bg position-relative" style="width: 18rem;">
+                                <img src="assets/images/bg-two.jpg" class="card-img-top" alt="kidneys">
+                                <div class="card-body">
+                                    <h5 class="card-title">Organic Kidney Beans</h5>
+                                    <p class="card-text text-end">&#8377; <s>120 </s></p>
+                                    <div class="d-flex justify-content-between">
+                                        <p class="card-text text-start">Discount</p>
+                                        <p>&#8377; 20 </p>
+                                    </div>
+                                    <p class="card-text text-end border-top-bottom">&#8377; 100</p>
+
+
+                                    <button type="button" class="btn btn-light ms-auto cartBtn">Add to Cart</button>
+                                </div>
+                                <div
+                                    class="wish modal-bg d-flex flex-column justify-content-between align-items-center text-center ">
+                                    <div class="wishStatus large">
+                                        <i class="bi bi-heart "></i>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            
+
+
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
             </div>
         </div>
 

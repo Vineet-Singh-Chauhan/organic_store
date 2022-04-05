@@ -125,7 +125,7 @@
   position: fixed;
 }
 .store-main{
-  height: 80vh;
+  height: 100vh;
   overflow-y: scroll;
   /* flex-grow: 1; */
 }

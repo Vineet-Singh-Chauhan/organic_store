@@ -8,6 +8,7 @@ function entry() {
 
     const username = document.querySelector(".username");
     const usernameVal = username.value.trim();
+    
     if (usernameVal == "") {
         setErrorMsg(username, 'username cannot be blank');
     }
@@ -17,6 +18,10 @@ function entry() {
     else {
         setSuccessMsg(username, usernameVal);
         sessionStorage.setItem("user1", usernameVal);
+        sessionStorage.setItem("priColorStored","white");
+        sessionStorage.setItem("secColorStored","rgba(0, 0, 0, 0.363)");
+       
+        
     }
 
 }

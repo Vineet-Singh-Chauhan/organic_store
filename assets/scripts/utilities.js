@@ -1,3 +1,7 @@
+document.documentElement.style.setProperty("--pri-color",sessionStorage.getItem("priColorStored"));
+document.documentElement.style.setProperty("--sec-color",sessionStorage.getItem("secColorStored"));
+
+
 
 //------------------preloader--------------------------//
 const preloader=document.getElementById("preloader");
@@ -85,9 +89,12 @@ function hidePalette() {
 const defaultBtn=document.querySelector(".default");
 defaultBtn.addEventListener("click",defaultColor);
 function defaultColor(){
-  
-    document.documentElement.style.setProperty('--pri-color', 'white');
-    document.documentElement.style.setProperty('--sec-color', 'rgba(0, 0, 0, 0.363)');
+    sessionStorage.setItem("priColorStored","white");
+    sessionStorage.setItem("secColorStored","rgba(0, 0, 0, 0.363)");
+    document.documentElement.style.setProperty("--pri-color",sessionStorage.getItem("priColorStored"));
+    document.documentElement.style.setProperty("--sec-color",sessionStorage.getItem("secColorStored"));
+    // document.documentElement.style.setProperty('--pri-color', 'white');
+    // document.documentElement.style.setProperty('--sec-color', 'rgba(0, 0, 0, 0.363)');
     document.querySelectorAll(".bi-check2-square").forEach(function(e){
       e.style.display="none"});
     defaultBtn.querySelector(".bi-check2-square").style.display="block";
@@ -98,9 +105,13 @@ function defaultColor(){
 const tomatoBtn=document.querySelector(".tomato");
 tomatoBtn.addEventListener("click",tomatoColor);
 function tomatoColor(){
-  
-    document.documentElement.style.setProperty('--pri-color', 'tomato');
-    document.documentElement.style.setProperty('--sec-color', 'rgba(223, 136, 120, 0.1)');
+    sessionStorage.setItem("priColorStored","tomato");
+    sessionStorage.setItem("secColorStored","rgba(223, 136, 120, 0.1)");
+    document.documentElement.style.setProperty("--pri-color",sessionStorage.getItem("priColorStored"));
+    document.documentElement.style.setProperty("--sec-color",sessionStorage.getItem("secColorStored"));
+
+    // document.documentElement.style.setProperty('--pri-color', 'tomato');
+    // document.documentElement.style.setProperty('--sec-color', 'rgba(223, 136, 120, 0.1)');
     document.querySelectorAll(".bi-check2-square").forEach(function(e){
       e.style.display="none"});
     tomatoBtn.querySelector(".bi-check2-square").style.display="block";
@@ -111,9 +122,12 @@ function tomatoColor(){
 const DodgerBlueBtn=document.querySelector(".DodgerBlue");
 DodgerBlueBtn.addEventListener("click",DodgerBlueColor);
 function DodgerBlueColor(){
-  
-    document.documentElement.style.setProperty('--pri-color', 'DodgerBlue');
-    document.documentElement.style.setProperty('--sec-color', 'rgba(30, 143, 255, 0.1');
+    sessionStorage.setItem("priColorStored","DodgerBlue");
+    sessionStorage.setItem("secColorStored","rgba(30, 143, 255, 0.1)");
+    document.documentElement.style.setProperty("--pri-color",sessionStorage.getItem("priColorStored"));
+    document.documentElement.style.setProperty("--sec-color",sessionStorage.getItem("secColorStored"));
+    // document.documentElement.style.setProperty('--pri-color', 'DodgerBlue');
+    // document.documentElement.style.setProperty('--sec-color', 'rgba(30, 143, 255, 0.1');
     document.querySelectorAll(".bi-check2-square").forEach(function(e){
       e.style.display="none"});
     DodgerBlueBtn.querySelector(".bi-check2-square").style.display="block";
@@ -124,9 +138,12 @@ function DodgerBlueColor(){
 const NeonGreenBtn=document.querySelector(".NeonGreen");
 NeonGreenBtn.addEventListener("click",NeonGreenColor);
 function NeonGreenColor(){
-  
-    document.documentElement.style.setProperty('--pri-color', 'rgb(17, 245, 119)');
-    document.documentElement.style.setProperty('--sec-color', 'rgba(17, 245, 119, 0.1');
+  sessionStorage.setItem("priColorStored","rgb(17, 245, 119)");
+  sessionStorage.setItem("secColorStored","rgba(17, 245, 119, 0.1)");
+  document.documentElement.style.setProperty("--pri-color",sessionStorage.getItem("priColorStored"));
+  document.documentElement.style.setProperty("--sec-color",sessionStorage.getItem("secColorStored"));
+    // document.documentElement.style.setProperty('--pri-color', 'rgb(17, 245, 119)');
+    // document.documentElement.style.setProperty('--sec-color', 'rgba(17, 245, 119, 0.1)';
     document.querySelectorAll(".bi-check2-square").forEach(function(e){
       e.style.display="none"});
     NeonGreenBtn.querySelector(".bi-check2-square").style.display="block";
@@ -137,9 +154,12 @@ function NeonGreenColor(){
 const AquaBtn=document.querySelector(".Aqua");
 AquaBtn.addEventListener("click",AquaColor);
 function AquaColor(){
-  
-    document.documentElement.style.setProperty('--pri-color', 'aqua');
-    document.documentElement.style.setProperty('--sec-color', 'rgba(0, 255, 255, 0.1)');
+  sessionStorage.setItem("priColorStored","aqua");
+  sessionStorage.setItem("secColorStored","rgba(0, 255, 255, 0.1)");
+  document.documentElement.style.setProperty("--pri-color",sessionStorage.getItem("priColorStored"));
+  document.documentElement.style.setProperty("--sec-color",sessionStorage.getItem("secColorStored"));
+    // document.documentElement.style.setProperty('--pri-color', 'aqua');
+    // document.documentElement.style.setProperty('--sec-color', 'rgba(0, 255, 255, 0.1)');
     document.querySelectorAll(".bi-check2-square").forEach(function(e){
       e.style.display="none"});
     AquaBtn.querySelector(".bi-check2-square").style.display="block";
@@ -149,9 +169,12 @@ function AquaColor(){
 const OrangeBtn=document.querySelector(".Orange");
 OrangeBtn.addEventListener("click",OrangeColor);
 function OrangeColor(){
-  
-    document.documentElement.style.setProperty('--pri-color', 'Orange');
-    document.documentElement.style.setProperty('--sec-color', 'rgba(255, 166, 0, 0.1)');
+  sessionStorage.setItem("priColorStored","Orange");
+  sessionStorage.setItem("secColorStored","rgba(255, 166, 0, 0.1)");
+  document.documentElement.style.setProperty("--pri-color",sessionStorage.getItem("priColorStored"));
+  document.documentElement.style.setProperty("--sec-color",sessionStorage.getItem("secColorStored"));
+    // document.documentElement.style.setProperty('--pri-color', 'Orange');
+    // document.documentElement.style.setProperty('--sec-color', 'rgba(255, 166, 0, 0.1)');
     document.querySelectorAll(".bi-check2-square").forEach(function(e){
       e.style.display="none"});
     OrangeBtn.querySelector(".bi-check2-square").style.display="block";
